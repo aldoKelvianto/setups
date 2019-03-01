@@ -4,6 +4,9 @@ set number
 "Line wrap
 set textwidth=140
 
+syntax on
+set hlsearch
+set ignorecase
 set autoindent
 set smartindent
 set smarttab
