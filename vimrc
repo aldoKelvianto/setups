@@ -24,10 +24,14 @@ set expandtab
 
 "Indent when save
 "===================== START
-augroup autoindent
-au!
-autocmd BufWritePre * :normal migg=G`i
-augroup End
+
+"augroup autoindent
+"au!
+"autocmd BufWritePre * :normal migg=G`i
+"augroup End
+
+"==================== END
+"Auto indent description
 "autocmd BufWritePre specifies this is a command to be executed automatically before writing the buffer to file.
 "* matches the files to run this auto-command on. If we want only text files, use *.txt, or only html files, use *.html, etc.
 ":normal says to execute the following command in normal mode
@@ -37,5 +41,3 @@ augroup End
 "G tells the = command to auto-indent to the bottom of the file
 "`i says to go to the mark stored in i
 "augroup and au! are for good practive
-"==================== END
-
